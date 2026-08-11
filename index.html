@@ -6,11 +6,13 @@
     <title>assignment-01</title>
     <style type="text/css">
         *{
-            text-decoration: none;
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .navbar{
             background:whitesmoke;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding-right: 15px; padding-left: 15px;
         }
         .navdiv{
@@ -26,18 +28,49 @@
             color: rgb(92, 90, 90);
             font-size: 20px;
             margin-right: 25px;
+            text-decoration: none;
         }
-        button{
-            color: aliceblue;
+        .button{
+            color: white;
             background-color: blue;
             margin-left: 10px;
-            border-radius: 10px;
+            border-radius: 10px 20px;
             padding: 10px;
+            text-decoration: none;
         }
-        button a{
-            font-weight: bold;
-            font-size: 15px;
+        .hero{
+            width: 100%;
+            min-height: 100vh;
+            background: url(banner.jpg);
+           background-size: cover;
+            object-fit: cover;
+            display: flex;
+             justify-content: center;
+            align-items: center;
+            position: relative;
         }
+        .hero::before {
+            content:"";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+        .hero .content{
+            position: relative;
+            text-align: center;
+            color: white;
+            max-width: 80%;
+        }
+        .hero .content h1{
+            font-size: 65px;
+            margin-bottom: 20px;
+        }
+        .hero .content p{
+            font-size: 22px;
+            line-height: 1.5;
+        }
+        
     </style>
 </head>
 <body>
@@ -51,10 +84,22 @@
                 <li> <a href="#">Venue</a> </li>
                 <li> <a href="#">Blog</a> </li>
             </ul>
-            <button>Register Now</a></button>
+            <a href="#" class="button">Register Now</a>
 
         </div>
 
     </nav>
+    <section>
+    <section class="hero">
+        <div class="content">
+            <h1>Code.Connect.Create</h1>
+            <p>Join 4,000+ engineers, founders, and builders at the premier developer <br>
+                conference of 2026. Three days of cutting-edge talks, hands-on workshops, <br>
+                and meaningful connections.
+            </p>
+            <br>
+            <a href="#button" class="button">Register Now</a>
+    </div>
+    </section>
 </body>
 </html>
