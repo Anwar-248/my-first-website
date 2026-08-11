@@ -70,16 +70,57 @@
             font-size: 22px;
             line-height: 1.5;
         }
-        
+        .speaker{
+        background: #f9f9f9;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        text-align: left;
+        width: 300px;
+
+        }
+  
+    .speakers h2{
+        font-size: 36px;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }  
+    .speakers-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-items: center;
+
+    }
+     .speakers {
+        background-color: white;
+        padding: 60px 0;
+        text-align:center;        
+    } 
+    .speakers img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        }
+    
+    .department{
+        padding: 15px;
+    }
+    .title{
+        color: blue;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
     </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="navdiv">
-            <div class="logo"><img src="logo.png"></a></div>
+            <div class="logo"><img src="logo.png" alt="logo"></div>
             <ul>
                 <li> <a href="#">Speakers</a> </li>
-                <li> <a href="#">Shedule</a> </li>
+                <li> <a href="#">Schedule</a> </li>
                 <li> <a href="#">Tracks</a> </li>
                 <li> <a href="#">Venue</a> </li>
                 <li> <a href="#">Blog</a> </li>
@@ -100,6 +141,44 @@
             <br>
             <a href="#button" class="button">Register Now</a>
     </div>
+    </section>
+    <section class="speakers">
+        <h2>Meet the Speakers</h2>
+        <div class="speakers-grid">
+            <div class="speaker">
+                <img src="andrej.png" alt="andrej">
+            <div class="department">
+                <p class="title">AI/ML</p>
+                <h3>Andrej Karpathy</h3>
+                <p>Pretraining team, Anthropic</p>
+            </div>
+        </div>
+        <div class="speaker">
+            <img src="demis.png" alt="demis">
+            <div class="department">
+                <p class="title">Cloud & DevOps</p>
+                <h3>Demis Hassabis</h3>
+                <p>Co-Founder and CEO, Google Deepmind</p>
+            </div>
+        </div>
+        <div class="speaker">
+            <img src="gary.png" alt="gary">
+            <div class="department">
+                <p class="title">FRONTEND</p>
+                <h3>Gary Marcus</h3>
+                <p>Staff Engineer, Vercel</p>
+            </div>
+        </div>
+
+          <div class="speaker">
+            <img src="mustafa.png" alt="mustafa">
+            <div class="department">
+                <p class="title">Security</p>
+                <h3>Mustafa Suleyman</h3>
+                <p>CEO of Microsoft AI</p>
+            </div>
+          </div>
+        </div>
     </section>
 </body>
 </html>
