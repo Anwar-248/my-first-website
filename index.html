@@ -112,6 +112,20 @@
         font-weight: bold;
         text-transform: uppercase;
     }
+    .pricing-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        justify-items: center;
+    }
+    .pricing-card {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px rgba(0,0,0,0.1);
+        padding: 25px;
+        text-align: left;
+        width: 300px;
+    }
     </style>
 </head>
 <body>
@@ -179,6 +193,31 @@
             </div>
           </div>
         </div>
+    </section>
+
+    <section class="pricing">
+        <h2>Secure Your Spot</h2>
+        <p>Early-bird pricing ends August 15, 2026.</p>
+       
+        <div class="pricing-grid"> 
+            <div class="pricing-card">
+                <h3>Standard</h3>
+                <p>$99</p>
+                <p>Access to all talks</p>
+            </div>
+
+        <div class="pricing-card"> 
+            <h3>Pro</h3>
+            <p>$199</p>
+            <p>Talks + Workshops</p>
+        </div>
+
+        <div class="pricing-card">  
+            <h3>Team</h3>
+            <p>$499</p>
+            <p>Group access (5 people)</p>
+        </div>
+    </div>
     </section>
 </body>
 </html>
